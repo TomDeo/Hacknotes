@@ -13,10 +13,34 @@ Este es el unico entor no en el que eh probado al 100% los procesos aqui descrit
 elegi una laptop ya que la naturaleza de este tipo de pruebas requiere flexibilidad de movimiento, si bien los primeros acercamientos a estas practicas los di en una pc
 de escritorio, rapidamente me encontre limitado al no poder reposicionarme fisicamente, recomiendo encarecidamente ajustar estas pruebas a un equipo portatil.
 
-Otro tema de sumo interes
+Otro tema de sumo interes, quiza mas que el hardware de nuestro equipo, es la placa de red que usaremos para hacer la auditoria. Mas de uno habra escuchado de las tan
+Famosas Tarjetas ALFA, es el estandar cuando uno quiere iniciarse seriamente en auditorias Wireles, estas cuentan con una tecnologia de señal muy amplia y con lo mas 
+importante los chipsets especificos.
+
+  Chipsets y Wireless Hacking
+  cuando hablamos de un chipset, nos referimos a aquella parte de un dispositivo destinado a gestiona el flujo de datos entre los componentes de una tarjeta madre, si
+  bien no es mi area el desarrollo de hardware es importante comprender en este campo cuales son los chipsets que permiten explotar al maximo las capacidades y las 
+  vulnerabilidades en una infraestructura no cableada, ya que no todos los chipset permiten esta caracteristica.
+  
+  Atheros AR9271.
+  Ralink RT3070.
+  Ralink RT3572.
+  Realtek RTL8812AU.
+  Ralink RT5370N.
+  
+  Estos ultimos son algunos eemplos de chipsets compatibles con "modo monitor" e "inyeccion de paquetes"
+  
+  Las tarjetas ALFA poseen algunos de estos, lo cual da la seguridad de que funcionaran para la mayoria de los ataques Wireless conocidos, comenzar con ese tipo de 
+  garantias es util para luego no andar renegando de forma tediosa hasta descubrir porque nuestra placa de red no funciona correctamente.
+    
+Entonces la pregunta es ¿debo tener acceso a una targeta ALFA para dar mis primeros pasos en el area del Wireles Hacking?, por suerte una respuesta rapida es no,
+si bien la ALFA es el estandar para ingresar, pues estan mas probadas, exiten otras Placas a un menor precio que pueden dar un buen resultado al contar con uno de los
+mentados chipsets especiales.
+
+una recomendacion personal, con la cual no se renegara mucho, mas que para instalar los drivers en Kali, es la "Tenda AC1300" esta es la que uso yo personalmente 
+(2 de hecho)  y hasta ahora me ah dado buenos resultados por un modico precio, en mi caso, pude hacerme con dos por el precio de la mitad de la alfa mas barata.
 
 
-
-
+Hechas estas aclaraciones preliminales... Vamos con lo mas interesante. 
 
 TIPOS DE ATAQUES------------------------------------------------------------------------------------------------------------------------------------------------------
