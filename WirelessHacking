@@ -1,0 +1,20 @@
+"Mucho me apasiona la dinamica del hacking wireless, el hecho de pensar que los paquetes viajen por el aire y todas las posibilidades por explorar que esto acarrea
+Me apasiona, si bien mi trabao es segurizar, es bien sabido que hay que conocer en extremo los vectores de ataque para poder  prevenirlos... y a nivel Hogarenio creo
+que wireless es una de las superficies de ataque mas grandes."
+
+HARDWARE--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Primeramente me gustaria aclarar algunas disposiciones generales sobre mi entorno de trabajo. para lo relacionado a pruebas Wireless suelo usar una laptop Gygabite con
+un i5 y 16 gb de ram, el SO es un windows 11 y uso la herramienta de virtualizacion "Virtualbox" donde corro la ultima distribucion de Kali linux en una instalacion 
+estandar sin muchos agregados.
+
+Este es el unico entor no en el que eh probado al 100% los procesos aqui descritos.
+
+elegi una laptop ya que la naturaleza de este tipo de pruebas requiere flexibilidad de movimiento, si bien los primeros acercamientos a estas practicas los di en una pc
+de escritorio, rapidamente me encontre limitado al no poder reposicionarme fisicamente, recomiendo encarecidamente ajustar estas pruebas a un equipo portatil.
+
+
+
+
+
+TIPOS DE ATAQUES------------------------------------------------------------------------------------------------------------------------------------------------------
