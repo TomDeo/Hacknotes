@@ -41,6 +41,38 @@ una recomendacion personal, con la cual no se renegara mucho, mas que para insta
 (2 de hecho)  y hasta ahora me ah dado buenos resultados por un modico precio, en mi caso, pude hacerme con dos por el precio de la mitad de la alfa mas barata.
 
 
-Hechas estas aclaraciones preliminales... Vamos con lo mas interesante. 
+Hechas estas aclaraciones preliminales... Vamos con lo mas interesante.
+
+WIFI------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Primeramente el Wifi es una tecnologia de comunicacion inalambrica, permite, dentro de cierto rango, conectar dispositivos que posean una placa de red inalambrica
+usando radiofrecuencia o infrarojos para transmitir la informacion.
+
+Dentro de las conecciones Inalambricas existen varios protocolos para la transmision de datos en aire:
+
+  WEP: siendo este el mas antigua y contando conn un nivel de seguridad muy bajo, no recomendable, fue el primero en ser desarrollado.
+  WPA: soporta credenciales de hasta 64 caracteres y es mas robusto que el anterior, utilizan una clave precompartida
+  WPA2:La WPA2 surgió para solucionar las vulnerabilidades del WPA. Es un protocolo basado en el estándar de seguridad inalámbrica 802.11i, y fue introducido en 2004.
+  Su principal progreso con respecto al anterior protocolo vino en lo relativo al uso de AES (Advanced Encryption Standard), que llegó a utilizarse para cifrar información
+  clasificada del gobierno norteamericano, demostrando así su aptitud para proteger redes domésticas.
+
+
+
 
 TIPOS DE ATAQUES------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Dentro del mundo del Hacking Wireless tenemos una gama de ataques algo mas reducida que la que podriamos tener por ejemplo haciendo pruebas sobre infraesructuras web,
+asun asi, las alternativas con las que contamos (y la siempre existente posibilidad de que nuevas aparezcan) tiene ya una versatilidad que podria darnos una buena
+superficie de ataque.
+
+Rogue AP:
+  Un Rogue AP (también conocidos como Fake AP) es un punto de acceso que tiene por objetivo que los usuarios se conecten a él para, una vez dentro, capturar su tráfico
+  y con ello, sus credenciales, tambien existe otra metodologia en el cual se los usa como una backdor para ingresar al sistema interno de una compania.
+  Los requisitos para llevar adelante este ataque son El pc (obiamente) y dos placas de red, con una crearemos el AP y la otra se encargara de dar el acceso a internet
+  
+  Este Proceso consta de Varias Partes asi que tratare de detallarlas lo mejor posible.
+  
+  1.CONFIGURAR LA INTERFAZ DE RED EN MODO ACCESS POINT
+    para esat tarea personalmente uso una d elas herramientas de Aircrack-ng, estoy hablando de airbase-ng, una vez configurada la interfaz en modo monitor claro.
+    
+
