@@ -75,4 +75,31 @@ Rogue AP:
   1.CONFIGURAR LA INTERFAZ DE RED EN MODO ACCESS POINT
     para esat tarea personalmente uso una d elas herramientas de Aircrack-ng, estoy hablando de airbase-ng, una vez configurada la interfaz en modo monitor claro.
     
+Evil Twin Attack:
+  Similar al antes mentado, pero con el extra de que aqui se trata de suplantar una red wifi ya existente, haciendo asi que ya sea un ususario nuevo en la red o, con
+  el uso de ataques concatenados, un ususario habitual, se coecte a el AP de atacante y una vez dentro este puede llevar a cabo todo tipo de procesos como envenenar
+  DNS, spoofing y basicamente controlar toda la interaccion del usuario victima con el internet.
+  
+  Una forma avanzada de usar este tipo de ataque es concatenado con un ataque de desautenticacion o Jamming de señal para lograr que el Access Point original se vea 
+  despojado de servicios y empuje a la victima a buscar otras redes, al hayar una con el mismo nombre puede que su curiosidad lo lleve a intentar en esta.
+  
+    INC: estoy trabajando en un meteodo para que caundo el AP victima sea dejado sin Servicio algunos equipos se conecten automaticamente al ap Evil TWIN.
 
+Jamming, Deautenticacion y DOS:
+  Este tipo de ataques consiste en dejar un AP inutilizado, ya sea porque se le inyectan paquetes aereos para desautenticar a los dispositivos conectados en este
+  o poruqe se usa una señal en la misma frecuencia para pisar la del AP.
+  
+  La herramienta mas comun para estas practicas es "aeroplay-ng" de la suite de aircrack, la cual tiene la capacidad de generar señales de deautentificacion constante
+  Consagrando asi un estado de Denegacion de servicios en la red Wireless, en cambio un Jamming tradicional puede generarse con un hardware mas especializado, me 
+  refiero a un dispositio emisor de frecuencias capaz de colapsar el espectro de ondas y evitar la conexion Aerea de la zona(tambien se los llama inibidores de señal).
+  
+Recon Out-the-Lan:
+  Este ultimo es mas un reconocimiento Activo que poemos hacer, si bien es algo que se usa en cada ataque Wifi existente, me gusta destacarlo pues la cantidad de info
+  Que brinda es alucinante, mas teniendo en cuenta que en ningun momento estaremos dentro de la LAN.
+  cuando tenemos una placa con la capacidad de uso de modo monitor, podemos hacer uso de herramientas como "airodump-ng" para ver con estacion (IP) y Mac los 
+  dispositivos dentro de una red a la que no hemos accedido.
+  Esto puede hacer que con algo de informacion previa (como una mac) podamos individualizar ciertos equipos dentro de una red, asi mismo, haciendo ingenieria inversa
+  encontrar la red de cierta persona si tenemos la MAC de su dispositivo.
+  
+  
+  
