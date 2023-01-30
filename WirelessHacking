@@ -101,5 +101,33 @@ Recon Out-the-Lan:
   Esto puede hacer que con algo de informacion previa (como una mac) podamos individualizar ciertos equipos dentro de una red, asi mismo, haciendo ingenieria inversa
   encontrar la red de cierta persona si tenemos la MAC de su dispositivo.
   
+TOOLS DE WIRELESS HACKING---------------------------------------------------------------------------------------------------------------------------------------------
+
+Existen varias alternativas a la hora de hacer un ataque Wireless, en esta oportunidad solo comentare las que mas eh utilizado, mi experiencia y algunos tips o
+Recomendaciones en su uso.
+
+  Airckrack-ng
+  es una suite de programas que nos permitirán realizar auditorías inalámbricas WiFi a routers y puntos de acceso WiFi.Esta suite es una de lasmás utilizadas para 
+  intentar hackear o crackear las redes WiFi con cifrado WEP, WPA y también WPA2 en los diferentes equipos.
+  Es una suite que recopila varios programas, estos se especializan en una funcion en conreto, y a mi parecer es insispensable iniciar pora qui cuando se quiere
+  aprender wireles, pues si bien hay algunas herrramientas mas sofisticadas, esta es muy util para entender cada fase del proceso en la mayoria de los ataques.
+  
+  Contiene los siguientes binarios:
+        airmon-ng
+        Se utiliza simplementa para habilitar el modo monitor en nuestra tarjeta de Red.
+            airmon-ng <start|stop> <interface> 
+            airmon-ng <check|check kill>
+        Este ultimo comando es para apagar procesos del sistema que podrian generar una colisio o incompatibilidad
+        
+        
+        airbase-ng
+        Esta esta pensada para atacar a los clientes en vez de a los AP en si, si logramos que los clientes se asocien al Fake AP que esta herraminta crea podremos
+        hacer cosas mas compejas como se explica al hablar del Rogue AP.
+        
+        airodump-ng
+        
+        aireplay-ng
+        aircrack-ng
+        airdecap-ng
   
   
