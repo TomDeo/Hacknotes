@@ -106,6 +106,7 @@ TOOLS DE WIRELESS HACKING-------------------------------------------------------
 Existen varias alternativas a la hora de hacer un ataque Wireless, en esta oportunidad solo comentare las que mas eh utilizado, mi experiencia y algunos tips o
 Recomendaciones en su uso.
 
+ 
   Airckrack-ng
   es una suite de programas que nos permitirán realizar auditorías inalámbricas WiFi a routers y puntos de acceso WiFi.Esta suite es una de lasmás utilizadas para 
   intentar hackear o crackear las redes WiFi con cifrado WEP, WPA y también WPA2 en los diferentes equipos.
@@ -156,4 +157,5 @@ Recomendaciones en su uso.
         Este programa es bastante sencillo, el objetivo es desencriptar las capturas de WEP, WPA y WPA2. 
         También se puede usar para eliminar todas las cabeceras de una captura inalámbrica sin cifrar (cuando el punto de acceso está sin cifrado de ningún tipo).
         Este programa generará un nuevo archivo que termina en «-dec.cap» que es la versión descifrada del archivo de entrada
-  
+
+  Airgeddon
