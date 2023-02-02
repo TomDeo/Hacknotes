@@ -125,9 +125,35 @@ Recomendaciones en su uso.
         hacer cosas mas compejas como se explica al hablar del Rogue AP.
         
         airodump-ng
+        es el software que se encarga de realizar la captura de los paquetes en la red inalámbrica, es capaz de capturar las tramas en bruto del estándar 802.11,
+        y es fundamental el modo monitor para que funcione a la perfección. 
+        Este programa es fundamental para crackear redes WEP y WPA, en el primer caso es capaz de capturar los vectores de inicialización, y en el segundo caso es 
+        capaz de capturar el handshake de los clientes inalámbricos, para posteriormente intentar crackearlos con aircrack-ng que es el programa encargado para ello.
+        
         
         aireplay-ng
+        El objetivo de este programa es generar tráfico en las redes inalámbricas con WEP y WPA, con el objetivo de crackearlas posteriormente con aircrack-ng.
+        Existen diferentes ataques que vamos a poder realizar, entre los que se encuentran los ataques de desautenticación para capturar el handshake de WPA, también 
+        permite realizar autenticaciones falsas, hacer un replay de los paquetes para acelerar el crackeo de las redes WEP, e incluso inyección de paquetes. 
+        Este programa está bastante relacionado con packetforge-ng, porque es posible crear frames específicamente diseñados como nosotros queramos.
+            0: Deauthentication
+            1: Fake authentication
+            2: Interactive packet replay
+            3: ARP request replay attack
+            4: KoreK chopchop attack
+            5: Fragmentation attack
+            6: Cafe-latte attack
+            7: Client-oriented fragmentation attack
+            8: WPA Migration Mode
+            9: Injection test
+            
         aircrack-ng
+        Este programa es el núcleo de la suite que le da nombre, el objetivo de este programa es recuperar las contraseñas de WEP, WPA y también WPA2. 
+        Existen diferentes modos de crackeo, generalmente se hace por fuerza bruta, por diccionario, o una combinación de ambos métodos.
+        Dependiendo de la red inalámbrica que queramos crackear, tendremos que utilizar unos comandos u otros
+        
         airdecap-ng
-  
+        Este programa es bastante sencillo, el objetivo es desencriptar las capturas de WEP, WPA y WPA2. 
+        También se puede usar para eliminar todas las cabeceras de una captura inalámbrica sin cifrar (cuando el punto de acceso está sin cifrado de ningún tipo).
+        Este programa generará un nuevo archivo que termina en «-dec.cap» que es la versión descifrada del archivo de entrada
   
