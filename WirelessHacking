@@ -159,3 +159,43 @@ Recomendaciones en su uso.
         Este programa generará un nuevo archivo que termina en «-dec.cap» que es la versión descifrada del archivo de entrada
 
   Airgeddon
+  esta es en mi opinion la suite de ataques wireless deinitiva, su desarrollo fue hecho por el ususario  V1s1t0r y el objetivo de esta es que sea el all-in-one
+  para auditorias aereas.
+  
+    Primeramente la herramienta se encarga de automatizar todo el procedimiento del ataque, desde que se elige la placa para ponerla en modo monitor hasta
+    que se obtiene la credencial del AP.
+    
+    existen dos formas para su instalacion, la primera es con el clasico instalador de paquetes del repositorio ofiial (apt, pkg, etc...) 
+    si bien esta es la forma mas rapida, recomiendo descargarla desde el github oficial, pues aqui el script de ejecucion nos instalara todas las dependecias
+    necesarias para usar el programa correctamente.
+    
+    https://github.com/v1s1t0r1sh3r3/airgeddon
+    
+  Fluxion
+  por ultimo esta herramienta es una especializada en ataques de evil twin, considero que es muy versatil en lo que hace ya que tiene por defecto todo tipo  de
+  plantillas para el phishing muy convincentes.
+  
+  https://github.com/FluxionNetwork/fluxion
+  
+  
+INDICE DE EXITO------------------------------------------------------------------------------------------------------------------------------------------------
+en este apartado tratare de (mediante varias pruebas) dilucidar cual de los vectores de ataque que tenemos en el wireless hacking es realmente el mas peligroso
+
+¡Cabe aclarar que estas pruebas las realice en redes de mi autoria o con el respectivo permiso de los dueños, cualquier actividad de este estilo no consentida
+es un acto delictivo!
+  
+entonces... ¿cual tiene una tasa de exito mayor?
+
+El primer tipo de prueba en el que me enfoque es en WEP, este protocolo es basicamente un easy win para un hacker, se recomienda encarecidamente cambiar su 
+Router si este sigue funcionando con este tipo de encriptacion (RC4) lo mas recomendable seria cambiar a un modelo mas moderno.
+el principal problema de WEP es que con la simple interaccion inalambrica es posible reconstruir la clave simplemente capturando el trafico de paquetes (o tambien
+estimulando el trafico).
+
+WPA y WPA2 tuvieron fueron los sucesores de WEP (quitando a WEP2 que corrio una suerte similar) estos dos, si bien tenian un sistema mucho mas robusto en 
+caunto a la seguridad de la comunicacion, tenian un talon de aquiles --> Las Contraseñas.
+
+Pues aunque los fabricantes pusieran contraseñas complejas, muchas veces los ussuarios las simplificaban a un extremo que las volvia debiles a ataques de
+fuerza bruta o diccionario. 
+
+aqui nacen los ataques de captura de handshake, donde se trata de "hashear" multiples palabras en un diccionario y contrastar los resultados con la captura.
+  
