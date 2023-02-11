@@ -1,0 +1,54 @@
+notes of HTB: windows basics
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Windows Versions
+The following is a list of the major Windows operating systems and associated version numbers:
+
+Operating System Names	Version Number
+Windows NT 4	4.0
+Windows 2000	5.0
+Windows XP	5.1
+Windows Server 2003, 2003 R2	5.2
+Windows Vista, Server 2008	6.0
+Windows 7, Server 2008 R2	6.1
+Windows 8, Server 2012	6.2
+Windows 8.1, Server 2012 R2	6.3
+Windows 10, Server 2016, Server 2019	10.0
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+REMOTE ACCESS CONCEPTS
+Remote Access is accessing a computer over a network. Local access to a computer is needed before one can access another computer remotely. 
+There are countless methods for remote access:
+
+  Some of the most common remote access technologies include but aren't limited to:
+
+    Virtual Private Networks (VPN)
+    Secure Shell (SSH)
+    File Transfer Protocol (FTP)
+    Virtual Network Computing (VNC)
+    Windows Remote Management (or PowerShell Remoting) (WinRM)
+    Remote Desktop Protocol (RDP)
+    
+    
+Remote Desktop Protocol (RDP)
+RDP uses a client/server architecture where a client-side application is used to specify a computer's target IP address or hostname over a network where RDP access is
+enabled, The target computer where RDP remote access is enabled is considered the server. It is important to note that RDP listens by default on logical port 3389. 
+
+We can use RDP to connect to a Windows target from an attack host running Linux or Windows. If we are connecting to a Windows target from a Windows host, we can use the
+built-in RDP client application called Remote Desktop Connection (mstsc.exe).
+For this to work, remote access must already be allowed on the target Windows system. By default, remote access is not allowed on Windows operating systems.
+
+Remote Desktop Connection also allows us to save connection profiles. This is a common habit among IT admins because it makes connecting to remote systems more 
+convenient and as pentesters, we can benefit from looking for these saved Remote Desktop Files (.rdp) while on an engagement.
+
+
+
+Using xfreerdp
+From a Linux-based attack host we can use a tool called xfreerdp to remotely access Windows targets. 
+
+   xfreerdp /v:<targetIp> /u:user /p:Password
+   
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OPERATING SYSTEM STRUCTURE
+
