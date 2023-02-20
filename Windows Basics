@@ -169,7 +169,9 @@ NTFS vs. SHARE PERMISSIONS
 The Server Message Block protocol (SMB) is used in Windows to connect shared resources like files and printers. It is used in large, medium, and small
 enterprise environments.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Windows SERVICES & Processes
 
 
 
