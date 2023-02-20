@@ -173,6 +173,61 @@ enterprise environments.
 
 Windows SERVICES & Processes
 
+Servicios de Windows
+  Los servicios son un componente importante del sistema operativo Windows. Permiten la creación y gestión de procesos de larga duración. Los servicios de 
+  Windows se pueden iniciar automáticamente al arrancar el sistema sin la intervención del usuario. Estos servicios pueden continuar ejecutándose en segundo
+  plano incluso después de que el usuario cierre la sesión de su cuenta en el sistema.
 
+  Los servicios de Windows se administran a través del sistema Administrador de control de servicios (SCM), accesible a través del services.msccomplemento MMC.
+  Este complemento proporciona una interfaz GUI para interactuar y administrar servicios y muestra información sobre cada servicio instalado. Esta información
+  incluye el nombre del servicio, la descripción, el estado, el tipo de inicio y el usuario con el que se ejecuta el servicio.
 
+  También es posible consultar y administrar servicios a través de la línea de comandos usando sc.execmdlets de PowerShell como Get-Service.
+  
+  En Windows, tenemos algunos servicios críticos del sistema que no se pueden detener y reiniciar sin reiniciar el sistema. Si actualizamos algún archivo o 
+  recurso en uso por uno de estos servicios, debemos reiniciar el sistema.
+  
+Procesos
+  Los procesos se ejecutan en segundo plano en los sistemas Windows. Se ejecutan automáticamente como parte del sistema operativo Windows o las inician otras
+  aplicaciones instaladas.
 
+  Los procesos asociados con las aplicaciones instaladas a menudo se pueden terminar sin causar un impacto severo en el sistema operativo. Ciertos procesos son
+  críticos y, si se terminan, impedirán que ciertos componentes del sistema operativo funcionen correctamente. Algunos ejemplos incluyen la aplicación de inicio
+  de sesión de Windows, el sistema, el proceso inactivo del sistema, la aplicación de inicio de Windows, el tiempo de ejecución del servidor del cliente, el 
+  administrador de sesión de Windows, el host del servicio y el proceso del servicio del subsistema de autoridad de seguridad local (LSASS).  
+  
+Servicio de subsistema de autoridad de seguridad local (LSASS)
+  lsass.exees el proceso que se encarga de hacer cumplir la política de seguridad en los sistemas Windows. Cuando un usuario intenta iniciar sesión en el
+  sistema, este proceso verifica su intento de inicio de sesión y crea tokens de acceso basados en los niveles de permiso del usuario. LSASS también es 
+  responsable de los cambios de contraseña de la cuenta de usuario. Todos los eventos asociados con este proceso (intentos de inicio/cierre de sesión, etc.) 
+  se registran en el registro de seguridad de Windows. LSASS es un objetivo de valor extremadamente alto, ya que existen varias herramientas para extraer
+  tanto el texto sin cifrar como las credenciales hash almacenadas en la memoria mediante este proceso.
+
+Herramientas internas del sistema
+  La suite SysInternals Tools es un conjunto de aplicaciones portátiles de Windows que se pueden usar para administrar sistemas Windows (en su mayor parte 
+  sin necesidad de instalación). Las herramientas se pueden descargar desde el sitio web de Microsoft o cargándolas directamente desde un recurso compartido 
+  de archivos con acceso a Internet escribiendo \\live.sysinternals.com\toolsen una ventana del Explorador de Windows.
+
+  Por ejemplo, podemos ejecutar procdump.exe directamente desde este recurso compartido sin descargarlo directamente al disco.
+  El paquete incluye herramientas como Process Explorer, una versión mejorada de Task Manager, y Process Monitor, que se pueden usar para monitorear el 
+  sistema de archivos, el registro y la actividad de la red relacionada con cualquier proceso que se ejecute en el sistema. Algunas herramientas adicionales
+  son TCPView, que se usa para monitorear la actividad de Internet, y PSExec, que se puede usar para administrar/conectarse a sistemas a través del protocolo
+  SMB de forma remota.
+  
+Task Manager
+  El Administrador de tareas de Windows es una poderosa herramienta para administrar sistemas Windows. Proporciona información sobre procesos en ejecución, 
+  rendimiento del sistema, servicios en ejecución, programas de inicio, usuarios registrados/procesos de usuarios registrados y servicios. El Administrador 
+  de tareas se puede abrir haciendo clic derecho en la barra de tareas y seleccionando Task Manager, presionando ctrl + shift + Esc, presionando ctrl + alt +
+  del y seleccionando Task Manager, abriendo el menú de inicio y escribiendo Task Manager, o escribiendo taskmgrdesde una consola CMD o PowerShell.
+
+Explorador de procesos
+  Process Explorer es parte del conjunto de herramientas de Sysinternals. Esta herramienta puede mostrar qué identificadores y procesos DLL se cargan cuando 
+  se ejecuta un programa. Process Explorer muestra una lista de los procesos que se están ejecutando actualmente y, a partir de ahí, podemos ver qué controles
+  ha seleccionado el proceso en una vista o las DLL y los archivos de intercambio de memoria que se han cargado en otra vista. También podemos buscar dentro
+  de la herramienta para mostrar qué procesos se relacionan con un identificador o DLL específico. La herramienta también se puede utilizar para analizar las
+  relaciones entre procesos primarios y secundarios para ver qué procesos secundarios genera una aplicación y ayudar a solucionar cualquier problema, como los
+  procesos huérfanos, que pueden quedar atrás cuando finaliza un proceso.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Permisos de los servicios
