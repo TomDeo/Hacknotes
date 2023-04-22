@@ -1,0 +1,31 @@
+Aqui recpilare algunas tecnicas y aplicaciones muy utiles para llevar adelante una recopilacion de informacion solo contando con un smartphone.
+
+*Aclaraciones*
+  En ninungun momento incentivo a llevar adelante el proceso investigativo solo con un dispositivo Celular, esta guia esta pensada para situaciones en las cuales un 
+  Investigador, pentester o miembro de las fuerzas no cuenta con el equipo adecuado y debe valerse de lo que tenga.
+  
+  Por norma general tratare de incluir tecnicas o tecnologias apuntadas al OSINT, pero en caso de que alguna me parezca muy util y sea mas enfocada a pentesting entonces
+  tambien la incluire.
+  
+  Tampoco me centrare en tecnicas de ocultacion o de enmascaramiento, solo dare algunas recomendaciones como uso de VPN o tips para el uso de sock puppets, pero estas
+  quedan a criterio del investigador en base a la dinamica que deba llevar adelante.
+  
+  Por ultimo aclarar que este compilado solo debe ser usado con fines de estudio o en base a un contrato que siga la norma vigente en el territorio donde se lleve la
+  investgacion.
+  
+NOCIONES GENERALES:
+
+DORKING:
+
+APLICACIONES:
+-argentosint
+-nosis
+-photoscan
+-poirot
+-fing
+-instabridge
+-iptool
+-parallel space
+
+  
+  
